@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".Activities.ProfileActivity">
+
+
+    <TextView
+        android:id="@+id/signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="fakebook"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/signup_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo"
+        android:textColor="@color/main_green" />
+
+    <EditText
+        android:id="@+id/edt_fullname"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/bg_email_address"
+        android:drawableEnd="@drawable/baseline_alternate_email_24"
+        android:drawablePadding="25dp"
+        android:drawableTint="@color/white"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="@color/main_full_light" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edt_fullname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_email_address"
+        android:drawableEnd="@drawable/baseline_account_circle_24"
+        android:drawableTint="@color/white"
+        android:hint="Teljes név"
+        android:inputType="textPersonName"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="@color/main_full_light" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Next_btn"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/btn_login_bg"
+        android:text="Frissités"
+        app:backgroundTint="@color/white"
+        android:textColor="#1877F2"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

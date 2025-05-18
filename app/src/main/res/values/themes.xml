@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Fakebook" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="android:colorButtonNormal">@color/white</item>
+    </style>
+
+    <style name="Theme.Fakebook" parent="Base.Theme.Fakebook">
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="android:colorButtonNormal">@color/white</item>
+    </style>
+</resources>

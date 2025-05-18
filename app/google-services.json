@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "948520575984",
+    "firebase_url": "https://fakebook-fcc50-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fakebook-fcc50",
+    "storage_bucket": "fakebook-fcc50.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948520575984:android:705da1e85e3a0a71587335",
+        "android_client_info": {
+          "package_name": "hu.mobilalkfejl.fakebook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD84dlLZunbz99Fk8_zJwq0DlMazrcJhHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

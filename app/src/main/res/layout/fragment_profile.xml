@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".Fragments.ProfileFragment"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/avatar_profile" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fullname_cardview"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="20dp">
+
+
+        <TextView
+            android:id="@+id/fullname_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:drawableLeft="@drawable/baseline_account_circle_24"
+            android:drawableTint="@color/main"
+            android:paddingStart="5dp"
+            android:text="Teljes név"
+            android:textSize="18sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/email_cardview"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/fullname_cardview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="20dp">
+
+
+        <TextView
+            android:id="@+id/email_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawableTint="@color/main"
+            android:paddingStart="5dp"
+            android:text="Email"
+            android:textSize="18sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEditProfile"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_cardview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Módositás"
+        android:background="@drawable/btn_login_bg"
+        app:backgroundTint="@color/gmts_dark_text_inactive"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logout_profile"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEditProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_logout_btn"
+        android:text="Kijelentkezés"
+        app:backgroundTint="@color/gmts_light_gray" />
+
+</RelativeLayout>
